@@ -1,0 +1,2265 @@
+{
+  "version": "1.7.2",
+  "type": "symbolGroups",
+  "symbolGroups": [
+    {
+      "name": "Default group",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "My Account",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[1]/div[2]/div/a[3]",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/h3[1]",
+                  "type": "XPATH"
+                },
+                "value": "User Information",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 1
+            }
+          ]
+        },
+        {
+          "name": "My Orders",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/a",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "/html/body/div[2]/h2",
+                  "type": "XPATH"
+                },
+                "value": "My Orders",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 1
+            }
+          ]
+        },
+        {
+          "name": "Sign-In",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[1]/div[2]/div/a[2]",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[1]",
+                  "type": "XPATH"
+                }
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[1]",
+                  "type": "XPATH"
+                },
+                "value": "ACID"
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[2]",
+                  "type": "XPATH"
+                }
+              },
+              "position": 3
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[2]",
+                  "type": "XPATH"
+                },
+                "value": "ACID"
+              },
+              "position": 4
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 5
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#WelcomeContent",
+                  "type": "CSS"
+                },
+                "value": "Welcome ABC!",
+                "regexp": false,
+                "maxWaitTime": 5
+              },
+              "position": 6
+            }
+          ]
+        },
+        {
+          "name": "Sign-Out",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[1]/div[2]/div/a[2]",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": true,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_waitForNode",
+                "waitCriterion": "REMOVED",
+                "node": {
+                  "selector": "#WelcomeContent",
+                  "type": "CSS"
+                },
+                "maxWaitTime": 2
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": true,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "Logout failed",
+              "action": {
+                "type": "web_checkForText",
+                "value": "You have been logged out",
+                "regexp": false,
+                "node": {
+                  "selector": "/html/body/div[2]/ul/li",
+                  "type": "XPATH"
+                }
+              },
+              "position": 2
+            }
+          ]
+        },
+        {
+          "name": "Register",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[1]/div[2]/div/a[2]",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Create New User",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [
+            {
+              "type": "input",
+              "name": "testUserNo",
+              "parameterType": "COUNTER",
+              "private": false
+            }
+          ],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/a",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[1]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[2]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "abcd1234"
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[3]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "abcd1234"
+              },
+              "position": 3
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[1]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}"
+              },
+              "position": 4
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[2]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Last{{#testUserNo}}"
+              },
+              "position": 5
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[3]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}@gshny.in"
+              },
+              "position": 6
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[4]/td[2]/input",
+                  "type": "XPATH"
+                }
+              },
+              "position": 7
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[4]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "0987654321"
+              },
+              "position": 8
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[5]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "{{#testUserNo}} College Avenue"
+              },
+              "position": 9
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[6]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "North Circular Road {{#testUserNo}}"
+              },
+              "position": 10
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[7]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Limerick"
+              },
+              "position": 11
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[8]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "XYZ{{#testUserNo}}"
+              },
+              "position": 12
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[9]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "57849{{#testUserNo}}"
+              },
+              "position": 13
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[10]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Ireland"
+              },
+              "position": 14
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 15
+            },
+            {
+              "type": "action",
+              "disabled": true,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "wait",
+                "duration": 5000
+              },
+              "position": 16
+            }
+          ]
+        }
+      ],
+      "groups": []
+    },
+    {
+      "name": "Search Products",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "Result Angelfish",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Angelfish11111",
+                "regexp": false,
+                "maxWaitTime": 1
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Search Rattlesnake",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Rattlesnake"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 3
+            }
+          ]
+        },
+        {
+          "name": "Search Angelfish",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Angelfish"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 3
+            }
+          ]
+        },
+        {
+          "name": "Search Finch",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Finch"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 3
+            }
+          ]
+        },
+        {
+          "name": "Result Manx",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Manx1111111",
+                "regexp": false,
+                "maxWaitTime": 1
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Search Manx",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Manx"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 3
+            }
+          ]
+        },
+        {
+          "name": "Result Rattlesnake",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Rattlesnake",
+                "regexp": false,
+                "maxWaitTime": 1
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Search Bulldog",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Bulldog"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 3
+            }
+          ]
+        },
+        {
+          "name": "Result Finch",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Finch",
+                "regexp": false,
+                "maxWaitTime": 1
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Result Bulldog",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Bulldog",
+                "regexp": false,
+                "maxWaitTime": 1
+              },
+              "position": 0
+            }
+          ]
+        }
+      ],
+      "groups": []
+    },
+    {
+      "name": "A Reset",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "Reset",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [
+            {
+              "type": "input",
+              "name": "testUserNo",
+              "parameterType": "COUNTER",
+              "private": false
+            }
+          ],
+          "outputs": [
+            {
+              "type": "output",
+              "name": "testUserNo",
+              "parameterType": "COUNTER"
+            }
+          ],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_goto",
+                "url": "/",
+                "credentials": {
+                  "name": "",
+                  "password": ""
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "incrementCounter",
+                "name": "testUserNo",
+                "incrementBy": 1
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Content > p:nth-child(2) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            }
+          ]
+        }
+      ],
+      "groups": []
+    },
+    {
+      "name": "ZTest",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "Search Product",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=text]:nth-child(1)",
+                  "type": "CSS"
+                },
+                "value": "Angelfish"
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#SearchContent > form > input[type=submit]:nth-child(2)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            }
+          ]
+        },
+        {
+          "name": "View Product",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Cart adding test",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(5) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Updating cart test",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=text]",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=text]",
+                  "type": "CSS"
+                },
+                "value": "4"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div[2]/div[1]/form/table/tbody/tr[3]/td[1]/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            }
+          ]
+        },
+        {
+          "name": "Login page",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[1]/div[2]/div/a[2]",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[1]",
+                  "type": "XPATH"
+                }
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[1]",
+                  "type": "XPATH"
+                },
+                "value": "ACID"
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[2]",
+                  "type": "XPATH"
+                }
+              },
+              "position": 3
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/p[2]/input[2]",
+                  "type": "XPATH"
+                },
+                "value": "ACID"
+              },
+              "position": 4
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 5
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#WelcomeContent",
+                  "type": "CSS"
+                },
+                "value": "Welcome ABC!",
+                "regexp": false,
+                "maxWaitTime": 5
+              },
+              "position": 6
+            }
+          ]
+        },
+        {
+          "name": "Registration",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [
+            {
+              "type": "input",
+              "name": "testUserNo",
+              "parameterType": "COUNTER",
+              "private": false
+            }
+          ],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/a",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[1]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[2]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "abcd1234"
+              },
+              "position": 2
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[1]/tbody/tr[3]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "abcd1234"
+              },
+              "position": 3
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[1]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}"
+              },
+              "position": 4
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[2]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Last{{#testUserNo}}"
+              },
+              "position": 5
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[3]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "TestUser{{#testUserNo}}@gshny.in"
+              },
+              "position": 6
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[4]/td[2]/input",
+                  "type": "XPATH"
+                }
+              },
+              "position": 7
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[4]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "0987654321"
+              },
+              "position": 8
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[5]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "{{#testUserNo}} College Avenue"
+              },
+              "position": 9
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[6]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "North Circular Road {{#testUserNo}}"
+              },
+              "position": 10
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[7]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Limerick"
+              },
+              "position": 11
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[8]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "XYZ{{#testUserNo}}"
+              },
+              "position": 12
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[9]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "57849{{#testUserNo}}"
+              },
+              "position": 13
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/table[2]/tbody/tr[10]/td[2]/input",
+                  "type": "XPATH"
+                },
+                "value": "Ireland"
+              },
+              "position": 14
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 15
+            },
+            {
+              "type": "action",
+              "disabled": true,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "wait",
+                "duration": 5000
+              },
+              "position": 16
+            }
+          ]
+        }
+      ],
+      "groups": []
+    },
+    {
+      "name": "Purchase Product",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "Select Product",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(1) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Checkout",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Cart > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Product Result",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Birds",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Confirm Order",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div/form/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div[2]/a",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "/html/body/div[2]/ul/li",
+                  "type": "XPATH"
+                },
+                "value": "Thank you, your order has been submitted.",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 2
+            }
+          ]
+        },
+        {
+          "name": "Remove Item",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div[2]/div[1]/form/table/tbody/tr[2]/td[8]/a",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Add to Cart",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#Catalog > table > tbody > tr:nth-child(2) > td:nth-child(5) > a",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Products",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#QuickLinks > a:nth-child(9)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Update Cart",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_clear",
+                "node": {
+                  "selector": "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=text]",
+                  "type": "CSS"
+                }
+              },
+              "position": 0
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_fill",
+                "node": {
+                  "selector": "#Cart > form > table > tbody > tr:nth-child(2) > td:nth-child(5) > input[type=text]",
+                  "type": "CSS"
+                },
+                "value": "4"
+              },
+              "position": 1
+            },
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "",
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "/html/body/div[2]/div[2]/div[1]/form/table/tbody/tr[3]/td[1]/input",
+                  "type": "XPATH"
+                },
+                "doubleClick": false
+              },
+              "position": 2
+            }
+          ]
+        }
+      ],
+      "groups": []
+    },
+    {
+      "name": "ZSearch",
+      "parent": null,
+      "symbols": [
+        {
+          "name": "Dogs Result",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "Not Dogs",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Dogs",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Cats Result",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "Not Cats",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Cats",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Reptiles Result",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "Not Reptiles",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Reptiles",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Fish Result",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": "Not Fish",
+              "action": {
+                "type": "web_waitForText",
+                "node": {
+                  "selector": "#Catalog > h2",
+                  "type": "CSS"
+                },
+                "value": "Fish",
+                "regexp": false,
+                "maxWaitTime": 2
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Reptiles",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#QuickLinks > a:nth-child(5)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Dogs",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#QuickLinks > a:nth-child(3)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Cats",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#QuickLinks > a:nth-child(7)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        },
+        {
+          "name": "Fish",
+          "description": "",
+          "expectedResult": "",
+          "successOutput": null,
+          "inputs": [],
+          "outputs": [],
+          "steps": [
+            {
+              "type": "action",
+              "disabled": false,
+              "ignoreFailure": false,
+              "negated": false,
+              "errorOutput": null,
+              "action": {
+                "type": "web_click",
+                "node": {
+                  "selector": "#QuickLinks > a:nth-child(1)",
+                  "type": "CSS"
+                },
+                "doubleClick": false
+              },
+              "position": 0
+            }
+          ]
+        }
+      ],
+      "groups": []
+    }
+  ]
+}

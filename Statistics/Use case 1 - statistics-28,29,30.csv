@@ -1,0 +1,11 @@
+Project;Test no;Start time;Step no;Algorithm;EQ oracle;|Sigma|;#EQs;#MQs (total);#MQs (learner);#MQs (EQ oracle);#Symbol calls (total);#Symbol calls (learner);#Symbol calls (EQ oracle);Duration (total); Duration (learner); Duration (EQ oracle)
+5969;28;"2020-08-16T12:05:05.134+01:00";1;TTT;random_word;6;0;21;6;15;63;6;57;28839;8803;20037
+5969;28;"2020-08-16T12:05:42.431+01:00";2;TTT;random_word;6;1;24;12;12;73;30;43;38274;17183;21091
+5969;28;"2020-08-16T12:07:06.357+01:00";3;TTT;random_word;6;1;61;46;15;259;156;103;106555;62678;43877
+
+5969;29;"2020-08-16T12:17:23.168+01:00";1;KEARNS_VAZIRANI;random_word;6;0;21;6;15;109;6;103;46948;8770;38178
+5969;29;"2020-08-16T12:18:12.435+01:00";2;KEARNS_VAZIRANI;random_word;6;1;22;8;14;113;21;92;39029;10997;28032
+5969;29;"2020-08-16T12:19:47.343+01:00";3;KEARNS_VAZIRANI;random_word;6;1;54;37;17;270;142;128;104839;66802;38038
+
+5969;30;"2020-08-16T12:26:44.396+01:00";1;DHC;random_word;6;0;198;186;12;640;546;94;278046;245833;32213
+
