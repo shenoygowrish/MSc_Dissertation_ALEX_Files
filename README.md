@@ -4,7 +4,7 @@ Website integrated with ALEX - https://petstore.octoperf.com/ [https://github.co
 
 *****************************************************************
 
-Folder - Symbols
+## Folder - Symbols
 
 ALEX-symbols-PetStore_application.json - Contains all the symbols created for the application 
 
@@ -15,19 +15,19 @@ Note: To add counter - Navigate to Learning - Counters and create a counter with
 
 *****************************************************************
 
-Folder - Hypothesis
+## Folder - Hypothesis
 
 Conatin hypothesis representation of each use case performed in the emprical study.
 
 *****************************************************************
 
-Folder - Statistics
+## Folder - Statistics
 
 Consist 5 statistics csv files and comparsion images - downloaded from ALEX for models created for the 5 use cases performed in the emprical study.
 
 *****************************************************************
 
-Folder - Test Cases
+## Folder - Test Cases
 
 tests-for-ALEX.json  - Contains all the tests and generated tests from the model that was created in ALEX compatible to import into other ALEX installation 
 To import
